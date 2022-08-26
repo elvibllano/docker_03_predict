@@ -21,7 +21,5 @@ WORKDIR ${LAMBDA_TASK_ROOT}
 
 COPY app.py ${LAMBDA_TASK_ROOT}
 COPY predict_script.py ${LAMBDA_TASK_ROOT}
-COPY ElevationValues_full.json ${LAMBDA_TASK_ROOT}
-COPY ElevationValues_full_ResultD2.json ${LAMBDA_TASK_ROOT}
 COPY model5Gaeta.h5 ${LAMBDA_TASK_ROOT}
 CMD ["app.handler"]
